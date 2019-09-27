@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <meta http-equiv="cache-control" content="max-age=0">
+  <link rel="icon" href="favicon.ico">
+  <link rel="stylesheet" href="style.css">
+  <title>Http服务器</title>
+</head>
+
+<body>
+  <img src="./favicon.ico" />
+  <div id="app">Hello World!</div>
+  <p>变了吗？</p>
+
+  <h3>文件上传：</h3>
+  选择一个文件上传: <br />
+  <form action="/upload" method="post" enctype="multipart/form-data">
+    <input type="file" name="image" />
+    <input type="text" name="name" value="zhoalongfei" hidden />
+    <input type="submit" value="提交" />
+  </form>
+
+  <h3>API 测试</h3>
+  <button id="api">API</button>
+
+  <h3>SW</h3>
+  <section></section>
+  <script src="jquery-3.4.1.js"></script>
+  <script src="index.js"></script>
+</body>
+
+</html>
